@@ -1,0 +1,12 @@
+people = ["Rina", ("Aman",), "Seema", ("Ravi",), "Tina", ("Rahul",)]
+boys = 0
+girls = 0
+
+for person in people:
+    if isinstance(person, tuple):
+        boys += 1
+    else:
+        girls += 1
+
+print("Number of boys:", boys)
+print("Number of girls:", girls)
