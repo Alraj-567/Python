@@ -1,0 +1,4 @@
+t = (10, 20, 30)
+modified_t = t[:1] + (99,) + t[2:]
+
+print("Modified tuple:", modified_t)
