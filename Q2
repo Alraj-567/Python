@@ -1,0 +1,14 @@
+students = [(101, "Aman", 18), (102, "Rita", 19), (103, "Kunal", 20)]
+
+roll_nos = []
+names = []
+ages = []
+
+for s in students:
+    roll_nos.append(s[0])
+    names.append(s[1])
+    ages.append(s[2])
+
+print("Roll Numbers:", roll_nos)
+print("Names:", names)
+print("Ages:", ages)
