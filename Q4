@@ -1,0 +1,17 @@
+original = "abcdef"
+remove = "cd"
+final = ""
+i = 0
+while i < len(original):
+    match = True
+    if i + len(remove) <= len(original):
+        for j in range(len(remove)):
+            if original[i + j] != remove[j]:
+                match = False
+                break
+        if match:
+            i += len(remove)
+            continue
+    final += original[i]
+    i += 1
+print(final)
