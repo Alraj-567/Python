@@ -1,0 +1,4 @@
+L = 5
+B = 3
+print(L * B)
+print(2 * (L + B))
