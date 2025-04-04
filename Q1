@@ -1,0 +1,3 @@
+words = ["apple", "banana", "grape", "cherry"]
+uppercase_set = set(word.upper() for word in words)
+print("Uppercase set:", uppercase_set)
