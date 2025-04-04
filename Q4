@@ -1,0 +1,30 @@
+n = int(input())
+
+prime = True
+if n < 2:
+    prime = False
+else:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            prime = False
+            break
+
+perfect = sum(i for i in range(1, n) if n % i == 0) == n
+
+temp = n
+arm = 0
+while temp:
+    digit = temp % 10
+    arm += digit ** len(str(n))
+    temp //= 10
+
+palindrome = str(n) == str(n)[::-1]
+
+square = n * n
+automorphic = str(square).endswith(str(n))
+
+print("Prime" if prime else "Not Prime")
+print("Perfect" if perfect else "Not Perfect")
+print("Armstrong" if arm == n else "Not Armstrong")
+print("Palindrome" if palindrome else "Not Palindrome")
+print("Automorphic" if automorphic else "Not Automorphic")
