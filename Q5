@@ -1,0 +1,21 @@
+prices = {
+    "rice": 50,
+    "oil": 120,
+    "sugar": 40,
+    "milk": 25
+}
+
+quantities = {
+    "rice": 2,
+    "oil": 1,
+    "sugar": 3,
+    "milk": 4
+}
+
+total = 0
+
+for item in prices:
+    if item in quantities:
+        total += prices[item] * quantities[item]
+
+print("Total grocery bill:", total)
