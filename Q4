@@ -1,0 +1,5 @@
+nums = [random.randint(-50, 50) for _ in range(30)]
+positives = [n for n in nums if n > 0]
+negatives = [n for n in nums if n < 0]
+print("Positives:", positives)
+print("Negatives:", negatives)
