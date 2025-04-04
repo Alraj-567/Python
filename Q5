@@ -1,0 +1,6 @@
+faculty_members = ["John", "Alexander", "Christine", "Rob", "Sarah", "Elizabeth"]
+
+# Filter out names with more than 8 characters
+filtered_names = list(filter(lambda name: len(name) > 8, faculty_members))
+
+print(filtered_names)  # Output: ['Alexander', 'Christine', 'Elizabeth']
