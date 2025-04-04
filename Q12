@@ -1,1 +1,3 @@
+kilograms = 2
+print(kilograms * 1000)
 
