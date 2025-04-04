@@ -1,0 +1,4 @@
+nums = [random.randint(1, 10) for _ in range(20)]
+target = int(input("Enter number to search: "))
+positions = [i for i, val in enumerate(nums) if val == target]
+print(positions)
