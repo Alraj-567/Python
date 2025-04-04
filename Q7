@@ -1,0 +1,17 @@
+import pickle
+
+class Employee:
+    def __init__(self, empcode, empname, doj, salary):
+        self.empcode = empcode
+        self.empname = empname
+        self.doj = doj
+        self.salary = salary
+
+emp = Employee(101, "John Doe", "2025-04-01", 55000)
+with open('employee_data.pkl', 'wb') as file:
+    pickle.dump(emp, file)
+
+with open('employee_data.pkl', 'rb') as file:
+    loaded_emp = pickle.load(file)
+
+print(f"Deserialized Employee: {loaded_emp.empname}, {loaded_emp.salary}")
