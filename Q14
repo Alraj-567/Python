@@ -1,0 +1,32 @@
+marks = [55, 68, 82]
+grades = []
+
+total = sum(marks)
+average = total / 3
+
+for mark in marks:
+    if mark == "Absent":
+        grades.append("NA")
+    elif mark <= 39:
+        grades.append("F")
+    elif mark <= 44:
+        grades.append("P")
+    elif mark <= 49:
+        grades.append("C")
+    elif mark <= 54:
+        grades.append("B")
+    elif mark <= 59:
+        grades.append("B+")
+    elif mark <= 69:
+        grades.append("A")
+    elif mark <= 79:
+        grades.append("A+")
+    else:
+        grades.append("O")
+
+status = "Fail" if any(m <= 39 for m in marks) else "Pass"
+
+print(total)
+print(average)
+print(status)
+print(grades)
