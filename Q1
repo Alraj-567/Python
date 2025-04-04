@@ -1,0 +1,15 @@
+def fun():
+    print("This is fun()")
+
+def disp():
+    print("This is disp()")
+
+def msg():
+    print("This is msg()")
+
+# Store functions in a list
+functions = [fun, disp, msg]
+
+# Loop to call each function
+for func in functions:
+    func()
