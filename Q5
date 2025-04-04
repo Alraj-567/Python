@@ -1,0 +1,6 @@
+
+with open('source_file.txt', 'r') as source_file, open('target_file.txt', 'w') as target_file:
+    content = source_file.read()
+    target_file.write(content.upper())
+
+print("Contents copied and converted to uppercase.")
