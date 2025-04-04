@@ -1,1 +1,3 @@
+rupees = 960
+print(rupees / 48)
 
