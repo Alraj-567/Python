@@ -1,0 +1,6 @@
+t = (100, 200, 300, 400)
+index_to_remove = 2
+
+new_tuple = t[:index_to_remove] + t[index_to_remove + 1:]
+
+print("Tuple after deletion:", new_tuple)
