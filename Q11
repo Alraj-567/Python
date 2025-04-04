@@ -1,0 +1,13 @@
+x_deg = float(input())
+x = x_deg * 3.14159 / 180
+
+sinx = 0
+term = x
+sign = 1
+for i in range(1, 15, 2):
+    f = 1
+    for j in range(1, i + 1):
+        f *= j
+    sinx += sign * (x ** i) / f
+    sign *= -1
+print(sinx)
