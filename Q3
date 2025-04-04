@@ -1,0 +1,11 @@
+names = set()
+
+names.update(["Alice", "Bob", "Charlie", "David", "Eva"])
+
+names.remove("Charlie")
+names.add("Chris")
+
+names.discard("Eva")
+names.discard("David")
+
+print("Final names set:", names)
