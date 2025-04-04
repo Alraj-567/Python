@@ -1,0 +1,3 @@
+H = 10
+base = 5
+print((H * base) / 2)
