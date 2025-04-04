@@ -1,0 +1,13 @@
+import random
+
+numbers = set()
+
+while len(numbers) < 10:
+    numbers.add(random.randint(15, 45))
+
+less_than_30 = len([n for n in numbers if n < 30])
+numbers = {n for n in numbers if n <= 35}
+
+print("Original Set:", numbers)
+print("Count < 30:", less_than_30)
+print("Set after removing > 35:", numbers)
