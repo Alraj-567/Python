@@ -1,0 +1,14 @@
+import csv
+
+# Data to write into CSV
+data = [["RollNo", "Name", "Subject1", "Subject2", "Subject3"],
+        [1, "John", 85, 90, 95],
+        [2, "Alice", 78, 88, 92],
+        [3, "Bob", 82, 86, 89]]
+
+# Writing data to a CSV file
+with open('students.csv', mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print("CSV file created successfully.")
