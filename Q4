@@ -1,0 +1,2 @@
+num = 120
+print("Divisible" if num % 10 == 0 else "Not Divisible")
