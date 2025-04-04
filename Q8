@@ -1,1 +1,3 @@
+dollars = 10
+print(dollars * 48)
 
